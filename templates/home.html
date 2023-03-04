@@ -18,7 +18,7 @@
 
   <body>
     <div class="container">
-        <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+        <h1 class="text-center mt-2 mb-4">{{company_name}}</h1>
         <img  class="img-fluid" id="banner" src="static/banner.jpeg" height="320">
     
         <h2 class="text-center mt-2 mb-4">About Jovian</h2>
@@ -26,7 +26,10 @@
         </p>
     
         <h2>Open Positions</h2>
-        <p > TD - Show jobs here </p>
+            {% for job in jobs %}
+              {% include 'jobitem.html' %}
+            {% endfor %}
+        
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2022, Jovian</p>
