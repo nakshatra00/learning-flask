@@ -8,10 +8,9 @@
 
 
   <body>
+  <div>
     {% include 'nav.html' %}
-    
-    {% include 'banner.html' %}
-    
+        
     <h3>Title</h3>
     <p>{{job.title}}</p>
 
@@ -28,6 +27,8 @@
     <h3>Requirements </h3>
     <body>{{job.requirements}}</body>
 
+    {% include 'application_form.html' %}
+  </div>
 
     {% include 'footer.html' %}
   </body>
