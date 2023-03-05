@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>{{job.title}} - Jovian Careers</title>
+    {% include 'bootstrap.html' %}
+  </head>
+
+
+  <body>
+    {% include 'nav.html' %}
+    
+    {% include 'banner.html' %}
+    
+    <h3>Title</h3>
+    <p>{{job.title}}</p>
+
+    <h3>Location</h3>
+    <p>{{job.location}}</p>
+
+    <h3>Salary</h3>
+    <p>{{job.currency}}{{job.salary}}</p>
+
+    <h3>Responsibilities</h3>
+    <p>{{job.responsibilities}}</p>
+
+
+    <h3>Requirements </h3>
+    <body>{{job.requirements}}</body>
+
+
+    {% include 'footer.html' %}
+  </body>
+  
+</html>
