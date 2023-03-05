@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    {% include 'nav.html' %}
     <div class="container">
         <h1 class="text-center mt-2 mb-4">{{company_name}}</h1>
         <img  class="img-fluid" id="banner" src="static/banner.jpeg" height="320">
@@ -32,8 +33,9 @@
         
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2022, Jovian</p>
       </div>
     </div>
+   {% include 'footer.html' %}
+  
   </body>
 </html>
